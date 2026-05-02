@@ -1,0 +1,115 @@
+.panel {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.panelHeader {
+  margin-bottom: 1.25rem;
+}
+
+.formName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px;
+}
+
+.formId {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.fieldList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fieldRow {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.fieldRow:last-child {
+  border-bottom: none;
+}
+
+.fieldCell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: white;
+  text-align: left;
+  min-width: 0;
+}
+
+.unmapped {
+  cursor: pointer;
+}
+
+.unmapped:hover {
+  background: #f8fafc;
+}
+
+.mapped {
+  cursor: default;
+}
+
+.fieldName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e293b;
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.mappingLabel {
+  font-size: 0.8rem;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.placeholder {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.clearBtn {
+  flex-shrink: 0;
+  padding: 0 1rem;
+  border: none;
+  border-left: 1px solid #e2e8f0;
+  background: white;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.1s;
+}
+
+.clearBtn:hover {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+.error {
+  color: #ef4444;
+  padding: 1rem;
+}
